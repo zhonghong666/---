@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全部商品</title>
+    <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.11.3.js"></script>
+</head>
+<body style="background-color: RGB(234,232,237);">
+    <div class="top">
+            <h1>全部商品</h1>
+                <a href="javascript:;" class="shaixuan">筛选</a>
+    </div>
+    <div class="shop-bodyer">
+        <ul>
+            <a href="goods.html"><li><img src="img/shop/3.jpg" alt=""><p id="title">艾比ABBY 小香风呢子连衣裙 黑色 S</p><p id="price">￥220.90</p></li></a>
+            <a href="goods_second.html"><li><img src="img/shop/2.jpg" alt=""><p id="title">希宝sheba  啫喱系列 吞拿鱼及翡翠明虾罐头 85g</p><p id="price">￥120.90</p></li></a>
+            <a href="goods.html"><li><img src="img/shop/1.jpg" alt=""><p id="title">路斯 猫用小鱼饼干 金枪鱼+猫薄荷 健康 绿色80g</p><p id="price">￥25.90</p></li></a>
+            <a href="goods_second.html"><li><img src="img/shop/4.jpg" alt=""><p id="title">佩玛思特 成猫去毛球配方粮 健康 绿色2kg</p><p id="price">￥36.00</p></li></a>
+            <a href="goods.html"><li><img src="img/shop/5.jpg" alt=""><p id="title">比瑞吉 基础呵护系列 全价幼猫怀孕及哺乳猫粮 2kg</p><p id="price">￥78.90</p></li></a>
+            <a href="goods_second.html"><li><img src="img/shop/6.jpg" alt=""><p id="title">维斯康VitsCan 猫用 蔓越莓尿路酸化颗粒 300g</p><p id="price">￥88.90</p></li></a>
+            <a href="goods.html"><li><img src="img/shop/7.jpg" alt=""><p id="title">小佩PETKIT  木纹智能称重碗金属版 大号</p><p id="price">￥79.50</p></li></a>
+            <a href="goods_second.html"><li><img src="img/shop/8.jpg" alt=""><p id="title">贵族Natures Gift 营养仔母猫幼猫粮 健康 绿色1kg </p><p id="price">￥32.90</p></li></a>
+            <a href="goods.html"><li><img src="img/shop/9.jpg" alt=""><p id="title">比瑞吉 基础呵护系列全价幼猫怀孕及哺乳猫粮 2kg</p><p id="price">￥68.90</p></li></a>
+            <a href="goods_second.html"><li><img src="img/shop/10.jpg" alt=""><p id="title">维斯康VitsCan 猫用 蔓越莓尿路酸化颗粒 300g</p><p id="price">￥98.50</p></li></a>
+        </ul>
+        <p id="bottom" style="margin-top: 1rem;">φ(>ω<*) 已经到底了٩(๑>◡<๑)۶ </p>
+    </div>
+    <div class="love"></div>
+    <div class="shaixuan-list">
+        <p>选择筛选条件</p>
+        <ul>
+            <li>全部商品</li>
+            <li>主粮精选</li>
+            <li>美味零食</li>
+            <li>清洁护理</li>
+            <li>潮流前线</li>
+            <li>趣味玩具</li>
+        </ul>
+        <p>取消</p>
+    </div>
+    <div class="footer">
+        <ul>
+            <li class="active">
+                <a href="index.html">
+                    <p>
+                        <i>&#xe61d;</i>
+                    </p>
+                    <h4>首页</h4>
+                </a>
+            </li>
+            <li><a href="shop.html"><p><i style="color: RGB(236,105,65) !important;">&#xe72b;</i></p><h4 style="color: RGB(236,105,65) !important;">商品</h4></a></li>
+            <li><a href="service.html"><p><i style="font-weight:bold;">&#xe682;</i></p><h4>服务</h4></a></li>
+            <li><a href="my.html"><p><i>&#xe610;</i></p><h4>我的</h4></a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    window.onload = function() {
+    // var scale = 1 / window.devicePixelRatio;
+    // document.querySelector('meta[name="viewport"]').setAttribute('content','width=device-width,initial-scale='+scale+',maximum-scale='+scale+',minimum-scale='+scale+',user-scalable=no');
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5+ 'px';
+}
+</script>
+<script>
+    $(function(){
+        $(".shaixuan").click(function(){
+            obj=this;
+            $(".love").fadeIn();                           //jQuery fadeIn() 用于淡入已隐藏的元素
+            $(".shaixuan-list").slideDown();       //jQuery slideDown() 方法用于向下滑动元素
+        })
+        $(".shaixuan-list li").click(function(){
+            $(".love").fadeOut();                       //jQuery fadeOut() 方法用于淡出可见元素
+            $(".shaixuan-list").slideUp();
+            $("h1").text($(this).text());
+        })
+        $(".shaixuan-list p").click(function(){
+            $(".love").fadeOut();
+            $(".shaixuan-list").slideUp();          //jQuery slideUp() 方法用于向上滑动元素
+        })
+    })
+</script>
+</html>

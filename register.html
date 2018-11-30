@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="img/3.png" alt="" onclick="javascript:window.history.back();">
+    </div>
+    <form action="">
+            <label><i>&#xe657;</i></label><input type="text" name="name" placeholder="手机号/邮箱/会员名" tabindex="1" class="login-text" />
+            <label><i>&#xe603;</i></label><input type="text" placeholder="请输入验证码" class="login-text" tabindex="2"/>
+            <input type="button" value="获取验证码" class="yzm" />
+            <label><i>&#xe66b;</i></label><input type="password" name="password" placeholder="请输入密码" tabindex="3" class="login-text" />
+            <label><i>&#xe66b;</i></label><input type="password" name="password" placeholder="请再次输入密码" tabindex="4" class="login-text" />
+            <a class="wjmm" href="login.html">已有账号，点击登录</a><!-- <a class="mfzc" href="register.html">免费注册 </a> -->
+        <button type="submit" tabindex="5">确认</button>
+    </form>
+</body>
+<script>
+    window.onload = function() {
+    // var scale = 1 / window.devicePixelRatio;
+    // document.querySelector('meta[name="viewport"]').setAttribute('content','width=device-width,initial-scale='+scale+',maximum-scale='+scale+',minimum-scale='+scale+',user-scalable=no');
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5+ 'px';
+}
+</script>
+</html>

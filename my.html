@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="top">
+            <h1>个人中心</h1>
+            <a href="login.html" class="zhuxiao">注销</a>   
+    </div>
+    <div class="my-bodyer">
+        <div class="my-top">
+            <a href=""><img src="img/head.jpg" alt=""></a>
+            <ul>
+                <li>你好，<span>钟洪</span></li>
+                <li>当前积分：<span>99999</span></li>
+            </ul>
+        </div>
+        <div class="my-list">
+            <ul>
+                <a href="shopcar.html"><li><i style="color:#C9A063">&#xe609;</i><span>购物车</span></li></a>
+                <a href="aboutme.html"><li><i style="color:orangered">&#xe606;</i><span>商品订单</span></li></a>
+                <a href="aboutme.html"><li><i style="color:red">&#xe645;</i><span>服务订单</span></li></a>
+                <a href="aboutme.html"><li><i style="color:red">&#xe660;</i><span>地址管理</span></li></a>
+                <a href="aboutme.html"><li><i style="color:dodgerblue">&#xe61f;</i><span>消费记录</span></li></a>
+                <a href="shop.html"><li class="hide"><i style="color:darkgoldenrod">&#xe72b;</i><span>积分商城</span></li></a>
+                <a href="aboutme.html"><li><i style="color:burlywood">&#xe66b;</i><span>修改密码</span></li></a>
+                <a href="aboutme.html"><li><i style="color:darkseagreen">&#xe627;</i><span>关于我们</span></li></a>
+                <a href="tel:15579872216"><li class="bgwhite"><i style="color:dodgerblue">&#xe63e;</i><span>热线电话:15579872216</span></li></a>
+            </ul>
+            <a href="https://me.csdn.net/zhonghong666"><p id="bottom" style="margin-top: 0.8rem;">CSDN博客：https://me.csdn.net/zhonghong666 </p></a>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li class="active">
+                <a href="index.html">
+                    <p>
+                        <i>&#xe61d;</i>
+                    </p>
+                    <h4>首页</h4>
+                </a>
+            </li>
+            <li><a href="shop.html"><p><i>&#xe72b;</i></p><h4>商品</h4></a></li>
+            <li><a href="service.html"><p><i style="font-weight:bold;">&#xe682;</i></p><h4>服务</h4></a></li>
+            <li><a href="my.html"><p><i style="color: RGB(236,105,65) !important;">&#xe610;</i></p><h4 style="color: RGB(236,105,65) !important;">我的</h4></a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    window.onload = function() {
+    // var scale = 1 / window.devicePixelRatio;
+    // document.querySelector('meta[name="viewport"]').setAttribute('content','width=device-width,initial-scale='+scale+',maximum-scale='+scale+',minimum-scale='+scale+',user-scalable=no');
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5+ 'px';
+}
+</script>
+</html>

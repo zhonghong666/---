@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+h4 {
+    font-size: 15px;
+    color: RGB(176,180,183);
+    margin-top: 0.04rem;
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/iconfont.eot#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg");
+}
+/*@media screen and (max-width: 321px) {
+    * {
+        font-size: 16px;
+    }   
+}
+@media screen and (min-width: 321px) and (max-width: 400px) {
+    * {
+        font-size: 17px;
+    }
+}
+@media screen and (min-width: 400px) {
+    * {
+        font-size: 19px;
+    }
+}*/
+.top {
+    position: fixed;
+    width:100%;
+    height:0.8rem;
+    background-color: #EC6941;
+    color: white;
+    text-align: center;
+    top: 0;
+    z-index: 10;
+}
+h1 {
+    font-weight: normal;
+    font-size: 25px;
+    height: 0.8rem;
+    line-height:0.8rem;
+    letter-spacing:0.1rem;
+}
+.gwc {
+    position: absolute;
+    right: 0.6rem;
+    text-align: center;
+}
+.zhuxiao {
+    float: right;
+    margin-right: 3%;
+    font-size: 16px;
+    background-color: #F6F6F6;
+    border-radius: 0.06rem;
+    width: 15%;
+    height: 0.6rem !important;
+    line-height: 0.6rem !important;
+    color: #666;
+    margin-top: -0.7rem;
+}
+.yes {
+    float: right;
+    margin-right: 3%;
+    font-size: 16px;
+    background-color: #F6F6F6;
+    border-radius: 0.06rem;
+    width: 15%;
+    height: 0.6rem !important;
+    line-height: 0.6rem !important;
+    color: #666;
+    margin-top: 0.1rem;
+}
+.shaixuan {
+    float: right;
+    margin-right: 3%;
+    font-size: 16px;
+    background-color: #F6F6F6;
+    border-radius: 0.06rem;
+    width: 15%;
+    height: 0.6rem !important;
+    line-height: 0.6rem !important;
+    color: #666;
+    margin-top: -0.7rem;
+}
+.top i {
+    font-family: "icons" !important;
+    font-size: 30px;
+    color: white;
+}
+.top a {
+    height: 0.8rem;
+    line-height: 0.8rem;
+}
+.bodyer {
+    /*min-height: 20rem;*/
+    margin: 0 auto;
+    max-width: 8rem;
+    position: relative;
+    overflow: hidden;
+    /*background-color: #f4f4f4;*/
+}
+.pictrue {
+    max-width: 8rem;
+    width: 100%;
+    margin: 0 auto;
+    position:relative;
+    height: 4rem;
+    overflow: hidden;
+    margin-top: 0.8rem;
+    background-image: url('../img/6.png');
+}
+.images {
+    height: 4rem;
+    position: absolute;
+}
+.images li{
+    height: 4rem;
+    float: left;
+}
+.images li img{
+    height: 4rem;
+    width: 100%;
+    max-width: 8rem;
+}
+ .index{
+    height: 0.2rem;
+    /*margin-top: -0.6rem;*/
+    top: 3.6rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.index li{
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 0.2rem;
+    background-color:rgba(250,250,250,0.5);
+    float: left;
+    margin-right: 0.16rem;
+}
+.index ul{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    left: 40%;
+}
+.num .on{
+    background-color: rgba(236,105,65,0.8);
+}
+.home {
+    min-height: 4.9rem;
+    width: 100%;
+    /*margin-top: 0.2rem;*/
+    /*height: 100%;*/
+    text-align: center;
+}
+.home li{
+    width: 25%;
+    float: left;
+    font-size: 15px;
+    margin-top: 0.3rem;
+}
+.home p {
+    color: RGB(58,59,61);
+}
+.home li img {
+    width: 70%;
+    border-radius: 50%;
+}
+.groom {
+    width: 100%;
+    min-height: 3.8rem;
+}
+.groom li{
+    width: 25%;
+    float: left;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 0.3rem;
+    background-color: RGB(248,248,248);
+}
+.groom p{
+    color: RGB(62,64,68);
+}
+.groom li img{
+    width: 90%;
+}
+.groom #span-two{
+    font-size: 13px;
+    color: RGB(197,197,197);
+    float: right;
+    margin-top: 0.1rem;
+}
+.guess {
+    width: 100%;
+    min-height: 23rem;
+}
+.shop {
+    background-color: RGB(245,245,245);
+    width: 100%;
+    min-height: 23rem;
+}
+.guess p {
+    color: RGB(62,64,68);
+}
+.guess #span-two{
+    font-size: 13px;
+    color: RGB(197,197,197);
+    float: right;
+    margin-top: 0.1rem;
+}
+.guess li {
+    margin-top: 0.3rem;
+    margin-left: 2%;
+    width: 47%;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    background-color: white;
+}
+.guess li img{
+    width: 60%;
+}
+#title {
+    font-size: 14px;
+}
+#price{
+    margin-top: 0.1rem;
+    color: red;
+    margin-bottom: 0.1rem;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 0.9rem;
+    border-top: 0.04rem solid RGB(231,231,231);
+    background: white;
+    z-index: 10;
+}
+.footer ul li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-size: 50px;
+}
+.footer ul a {
+    display: block;
+    height: 0.9rem;
+    padding-top: 0.06rem;
+    text-decoration: none;
+}
+.footer i {
+    font-family: "icons" !important;
+    font-style: normal;
+    color: RGB(118,124,130);
+}
+.footer ul p {
+    height: 0.4rem;
+    line-height: 0.4rem;
+    color: RGB(103,110,116);
+    font-style: normal;
+    font-weight:normal;
+    font-size: 22px;
+}
+.my-bodyer {
+    max-width: 8rem;
+    margin: 0 auto;
+    background-color: RGB(235,233,236);
+}
+.my-top {
+    width: 100%;
+    height: 5rem;
+    margin-top: 0.8rem;
+    background: url('../img/3.jpg') no-repeat;
+}
+.my-top a{
+    position: absolute;
+    margin-left: 2.7rem;
+    margin-top: 0.5rem;
+}
+.my-top img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.my-top li{
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    margin-top: 4rem;
+    background-color: RGBA(51,135,255,0.3);
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    color: white;
+}
+.my-top li span{
+    color: RGB(236,105,65);
+}
+.my-list {
+    margin-top: 0.2rem;
+    background-color:#fff;
+    width: 100%;
+    height: 12rem;
+}
+.my-list i{
+    font-family: "icons" !important;
+    margin-right: 0.3rem;
+    font-style: normal;
+    font-size: 25px;
+}
+.my-list li{
+    color:red;
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    border-bottom: 0.02rem solid #ddd;
+    text-indent: 3%;
+    font-size: 20px;
+    background: url('../img/list.png') 96% center no-repeat;
+}
+.my-list span{
+    color: #666;
+}
+.shop-bodyer{
+    margin: 0 auto;
+    max-width: 8rem;
+    background-color: RGB(234,232,237);
+    margin-top: 0.8rem;
+    min-height: 25rem;
+}
+.shop-bodyer li{
+    width: 47%;
+    float: left;
+    margin-left: 2%;
+    background-color: white;
+    margin-top: 0.2rem;
+    font-size: 14px;
+    text-align: center;
+    color: RGB(35,35,35);
+}
+.shop-bodyer li img{
+    width: 80%;
+}
+.shaixuan-list{
+    /*background: white;*/
+    display: none;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    z-index: 99999;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.shaixuan-list li{
+    width: 100%;
+    height: 0.9rem;
+    line-height: 0.8rem;
+    color: #cb0b16;
+    border-bottom: 0.02rem solid #ddd;
+}
+.shaixuan-list p{
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    color: RGB(102,102,102);
+    border-bottom: 0.02rem solid #ddd;
+}
+.love{
+    background: RGBA(95,99,104,0.3);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+.search{
+    position: absolute;
+    width: 70%;
+    left: 0;
+    margin-left: 0.5rem;
+    margin-top: 0.1rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    border-radius:0.6rem;
+    border: none;
+    outline: none;
+    text-indent: 0.7rem;
+    font-size: 15px;
+}
+.sr{
+    position: absolute;
+    left: 0;
+    color: #888 !important;
+    margin-left: 0.6rem;
+    z-index: 10;
+    outline: none !important;
+    font-size: 23px !important;
+    margin-top: 0.15rem;
+}
+.service-list{
+    position: relative;
+    max-width: 8rem;
+    top: 0.8rem;
+    /*background-color: red;*/
+    min-height: 15rem;
+    margin: 0 auto;
+}
+.service-list li{
+    /*float: left;*/
+    width: 100%;
+    min-height: 1.7rem;
+    /*background-color: red;*/
+    text-align: center;
+    margin-top: 0.2rem;
+    border-bottom: 0.02rem solid #ddd;
+}
+.service-list li img{
+    width: 30%;
+    height: 1.6rem;
+    float: left;
+    margin-left: 0.5rem;
+    margin-top: -0.08rem;
+}
+.service-list li h3{
+    font-size: 16px;
+    color: #000;
+    margin-top: 0.1rem;
+}
+.service-list li p{
+    color: #666;
+    font-size: 14px;
+    margin-top: 0.1rem;
+}
+.service-list li p span{
+    color: #EC6941;
+}
+.service-list li div{
+    float: left;
+    margin-left: 0.2rem;
+}
+#bottom{
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    float: left;
+    margin-top: 1.5rem;
+    color: RGB(168,171,174);
+}

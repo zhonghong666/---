@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 15rem;
+}
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/iconfont.eot#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#iconfont") format("svg");
+}
+form{
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 0.3rem;
+}
+i{
+    font-family: "icons" !important;
+    color: #EC6941 !important;
+    font-size: 26px;
+    margin-right: 0.1rem;
+    font-style: normal;
+}
+a{
+    color: #666;
+    text-decoration: none;
+    font-size: 15px;
+    float: right;
+    margin-top: 0.2rem;
+}
+.mfzc {
+    margin-right: 5%;
+}
+label {
+    position: absolute;
+    text-align: center;
+}
+.login-text {
+    width: 100%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-indent: 0.92rem;
+    border: none;
+    border-bottom: 0.02rem solid #EC6941;
+    text-indent:0.7rem;
+    font-size: 18px;
+    outline: none;
+}
+.banner img{
+    width: 100%;
+    height: 5rem;
+}
+button {
+    width: 100%;
+    height: 1rem;
+    border: 0;
+    background-color: #EC6941;
+    color: white;
+    font-size: 20px;
+    border-radius: 0.6rem;
+    margin-top: 0.4rem;
+    outline: none;
+}
+.yzm {
+    position: absolute;
+    border: none;
+    background: RGB(193,193,193);
+    width: 2rem;
+    height: 0.6rem;
+    border-radius: 0.1rem;
+    margin-left: 50%;
+    margin-top: -0.7rem;
+    outline: none;
+}
